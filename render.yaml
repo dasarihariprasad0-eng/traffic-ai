@@ -13,7 +13,7 @@ services:
       - key: GEMINI_API_KEY
         sync: false
       - key: FRONTEND_URL
-        value: https://traffic-ai-web.onrender.com
+        value: https://traffic-ai-1-v3j8.onrender.com
 
   - type: web
     name: traffic-ai-web
@@ -23,4 +23,4 @@ services:
     staticPublishPath: dist
     envVars:
       - key: VITE_API_URL
-        value: https://traffic-ai-api.onrender.com/api/v1
+        value: https://traffic-ai-hsu1.onrender.com/api/v1
