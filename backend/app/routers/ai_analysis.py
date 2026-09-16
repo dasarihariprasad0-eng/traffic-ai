@@ -34,7 +34,7 @@ async def analyze_gemini(file: UploadFile = File(...)):
         data = await file.read()
         img = Part.from_bytes(data=data, mime_type=file.content_type or "image/jpeg")
         resp = client.models.generate_content(
-            model="gemini-2.5-flash",
+            model="gemini-3.6-flash",
             contents=[img, PROMPT],
         )
         raw = resp.text
